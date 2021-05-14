@@ -15,7 +15,7 @@ export * from './timezone-picker.service';
   exports: [TimezonePickerComponent, TimezonePickerPipe]
 })
 export class TimezonePickerModule {
-  static forRoot(): ModuleWithProviders {
+  static forRoot(): ModuleWithProviders<TimezonePickerModule> {
     return {
       ngModule: TimezonePickerModule,
       providers: [TimezonePickerService]
